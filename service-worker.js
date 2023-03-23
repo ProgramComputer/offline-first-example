@@ -5,9 +5,9 @@ const latest = {
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(latest.cache).then(cache => {
-      return cache.addAll([
+      /*return cache.addAll([
         '{{.}}'
-      ]);
+      ]);*/
     })
   );
 });
